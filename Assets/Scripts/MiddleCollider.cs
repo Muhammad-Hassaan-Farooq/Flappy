@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MiddleCollider : MonoBehaviour
 {
     private Logic logicScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +18,6 @@ public class MiddleCollider : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == 3)
-        {
-            logicScript.addScore(1);
-        }
-    }
+
 
 }
